@@ -64,6 +64,32 @@
         #historia {
             scroll-margin-top: 120px;
         }
+
+        .icone-glow-branco {
+            color: #000000 !important;
+            /* preto sólido */
+            filter: drop-shadow(0 0 6px white) drop-shadow(0 0 12px white);
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .icone-glow-branco:hover {
+            transform: scale(1.15);
+            filter: drop-shadow(0 0 8px white) drop-shadow(0 0 16px white);
+        }
+
+        .icone-glow-ouro {
+            color: #000000 !important;
+            /* preto sólido */
+            filter: drop-shadow(0 0 6px #FFD700) drop-shadow(0 0 12px #FFD700);
+            /* brilho ouro */
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .icone-glow-ouro:hover {
+            transform: scale(1.15);
+            filter: drop-shadow(0 0 8px #FFD700) drop-shadow(0 0 16px #FFD700);
+            /* mais glow no hover */
+        }
     </style>
 </head>
 
@@ -234,14 +260,16 @@
     <div class="container text-center my-5 text-white" id="redesociais">
         <h1 class="p-5">Redes Sociais</h1>
         <div class="d-flex justify-content-center gap-4 mt-3 fs-1">
-            <a href="#" style="color: #25D366;"><i class="bi bi-whatsapp fs-2"></i></a>
-            <a href="#" style="color: #cd486b;"><i class="bi bi-instagram fs-2"></i></a>
-            <a href="#" style="color: #316FF6;"><i class="bi bi-facebook fs-2"></i></a>
-            <a href="#" style="color: #0077B5;"><i class="bi bi-linkedin fs-2"></i></a>
+
+
+            <a href="#"><i class="bi bi-whatsapp fs-2 icone-glow-ouro"></i></a>
+            <a href="#"><i class="bi bi-instagram fs-2 icone-glow-ouro"></i></a>
+            <a href="#"><i class="bi bi-facebook fs-2 icone-glow-ouro"></i></a>
+            <a href="#"><i class="bi bi-linkedin fs-2 icone-glow-ouro"></i></a>
         </div>
     </div>
 
-    
+
 
     <footer class="text-center py-3" style="background-color:black;">
         <div class="d-flex justify-content-center align-items-center">
